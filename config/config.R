@@ -3,7 +3,8 @@
 ############################################################################
 # if(!require(installr)) {install.packages("installr"); require(installr)}
 # updateR()
-packages <- c("timeSeries", "rrcov", "zoo", "xts", "quadprog", "doParallel")
+packages <- c("timeSeries", "rrcov", "zoo", "xts", 
+              "quadprog", "doParallel", "PerformanceAnalytics")
 packages <- lapply(packages, FUN = function(x) {
   if (!require(x, character.only = TRUE)) {
     install.packages(x)
